@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestion d'activité</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <nav id="nav">
+      <div class="marque" id="nav-marque">Gestion d'activité<small>Micro-entreprise</small></div>
+      <a href="#/tableau"><span class="icone">▦</span>Tableau de bord</a>
+      <a href="#/clients"><span class="icone">☺</span>Clients</a>
+      <a href="#/projets"><span class="icone">◧</span>Projets</a>
+      <a href="#/devis"><span class="icone">✎</span>Devis</a>
+      <a href="#/factures"><span class="icone">€</span>Factures</a>
+      <a href="#/livrables"><span class="icone">⬒</span>Livrables</a>
+      <a href="#/temps"><span class="icone">◷</span>Suivi du temps</a>
+      <a href="#/parametres"><span class="icone">⚙</span>Paramètres</a>
+      <div class="bas">Données enregistrées localement<br>dans donnees/gestion.db</div>
+    </nav>
+    <main id="vue"></main>
+  </div>
+
+  <div id="modal-fond">
+    <div id="modal">
+      <div class="m-tete"><span id="modal-titre"></span><button type="button" id="modal-fermer" title="Fermer">×</button></div>
+      <div class="m-corps" id="modal-corps"></div>
+      <div class="m-pied" id="modal-pied"></div>
+    </div>
+  </div>
+  <div id="toast"></div>
+  <div id="impression"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# Données personnelles (clients, factures...) : ne jamais les publier
+donnees/
+__pycache__/
+*.pyc
