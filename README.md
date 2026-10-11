@@ -87,3 +87,10 @@ donnees/         vos données (créé au premier lancement)
 
 Pour changer le port (si 8765 est déjà pris) : définir la variable d'environnement
 `GESTION_PORT`, par exemple `set GESTION_PORT=8800` avant de lancer.
+
+## 8. Version « artefact » (en ligne sur claude.ai)
+
+Le dossier `artefact/` contient une version en un seul fichier, publiée comme artefact claude.ai :
+les données sont enregistrées dans l'artefact (lisibles par le seul propriétaire) et les PDF
+sont générés directement dans la page. Pour la reconstruire après une modification de `app/` :
+`python3 artefact/construire.py`.
